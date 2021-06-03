@@ -11,6 +11,7 @@ export class AppComponent implements OnInit{
 
   items: any = [];
   itemName = "";
+  errorMessage = "";
 
   listOfvegetables = ["capsicum", "tomato", "cabbage"];
   listOfFruits = ["orange", "banana", "mango"];
@@ -28,15 +29,25 @@ export class AppComponent implements OnInit{
   addItem() {
     //console.log(this.itemName);
     if (this.itemName != "") {
+
+      if(this.listOfvegetables.indexOf(this.itemName) > -1 || this.listOfFruits.indexOf(this.itemName) > -1){
+        
+      }else{
+        this.errorMessage = "Please enter valid item !";
+        return;
+      }
       //console.log(this.itemName);
       if (this.listOfvegetables.indexOf(this.itemName) > -1) {
         this.items.push([this.itemName, "vegetable"]);
       } else {
         this.items.push([this.itemName, "fruit"]);
       }
+      this.errorMessage = "";
       //this.items.push(this.itemName);
       this.itemName = "";
       //console.log(this.items);
+    }else{
+      this.errorMessage = "Item is Empty !";
     }
 
     let jsonData = JSON.stringify(this.items);
@@ -44,6 +55,15 @@ export class AppComponent implements OnInit{
 
   }
 
+  addItemByEnter(event){
+    if (event.keyCode === 13) {
+      // Cancel the default action, if needed
+      event.preventDefault();
+      // Trigger the button element with a click
+      this.addItem();
+    }
+  }
+  
   removeItem(index: number) {
     this.items.splice(index, 1);
 
