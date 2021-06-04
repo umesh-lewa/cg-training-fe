@@ -9,11 +9,14 @@
       <p>"capsicum", "tomato", "cabbage"</p>
     </div>
     <div class="col-md-6">
+      <app-basket (emitter)="onSend($event)"></app-basket>
+      <!--
       <h1 class="display-4">My Todo</h1>
       <br>
       <p>{{errorMessage}}</p>
-      <input type="text" [(ngModel)]="itemName" class="rounded-input" (keyup)="addItemByEnter($event)"> <button (click)="addItem()" 
-        class="btn btn-default green-icon"> Add <i class="fas fa-plus-circle"></i></button>
+      <input type="text" [(ngModel)]="itemName" class="rounded-input" (keyup)="addItemByEnter($event)"> <button
+        (click)="addItem()" class="btn btn-default green-icon"> Add <i class="fas fa-plus-circle"></i></button>
+      -->
       <!--
       <p>{{itemName}}</p>
       -->
@@ -30,15 +33,21 @@
   <div class="row">
     <div class="col-md-3">
     </div>
-    <div class="col-md-6 col-md-offset-3">
+    <div class="col-md-6">
+      <!--
+      <app-basket [itemName]=""></app-basket>
+      -->
+      <!--
       <ul>
         <li *ngFor="let eachItem of items; let itemIndex = index;"
-          [ngClass]="eachItem[1]=='vegetable' ? 'vegetable-class' : 'fruit-class' ">{{eachItem[0]}} <button
-            (click)="removeItem(itemIndex)" class="btn btn-default"> <i
-              class="far fa-times-circle red-icon"></i></button></li>
-      </ul>
+            [ngClass]="eachItem[1]=='vegetable' ? 'vegetable-class' : 'fruit-class' ">{{eachItem[0]}} <button
+                (click)="removeItem(itemIndex)" class="btn btn-default"> <i
+                    class="far fa-times-circle red-icon"></i></button> - Type : {{eachItem[1] | uppercase}}</li>
+    </ul>
+    -->
     </div>
     <div class="col-md-3">
+      <app-summary [itemCount]="itemCount"></app-summary>
     </div>
   </div>
 </div>

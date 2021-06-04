@@ -1,13 +1,14 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit, Output } from '@angular/core';
+import { EventEmitter } from '@angular/core';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  selector: 'app-basket',
+  templateUrl: './basket.component.html',
+  styleUrls: ['./basket.component.scss']
 })
-export class AppComponent implements OnInit {
+export class BasketComponent implements OnInit {
 
-  title = 'my-second-angular';
+  constructor() { }
 
   items: any = [];
   itemName = "";
@@ -16,9 +17,10 @@ export class AppComponent implements OnInit {
   listOfvegetables = ["capsicum", "tomato", "cabbage"];
   listOfFruits = ["orange", "banana", "mango"];
 
-  itemCount = 0;
-  onSend(count){
-    this.itemCount = count;
+  @Output() emitter:EventEmitter<Number> = new EventEmitter<Number>();
+
+  emitItemCount(){
+    this.emitter.emit(this.items.length);
   }
 
   ngOnInit() {
@@ -29,6 +31,7 @@ export class AppComponent implements OnInit {
     } else {
       console.log("no items found in localstorage");
     }
+    this.emitItemCount();
   }
 
   addItem() {
@@ -65,6 +68,7 @@ export class AppComponent implements OnInit {
       //this.items.push(this.itemName);
       this.itemName = "";
       //console.log(this.items);
+      this.emitItemCount();
     } else {
       this.errorMessage = "Item is Empty !";
     }
