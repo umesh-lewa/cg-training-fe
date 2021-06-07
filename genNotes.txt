@@ -1,0 +1,49 @@
+https://tutorialsclass.com/code/css-text-vertical-align-middle-in-div/
+
+https://codepen.io/umeshlewa/pen/LYWLPdy
+
+https://tobiasahlin.com/blog/masonry-with-css/
+
+https://stackoverflow.com/questions/35772655/using-z-index-to-get-div-above-another-div
+
+https://stackoverflow.com/questions/18672452/left-align-and-right-align-within-div-in-bootstrap
+
+https://stackoverflow.com/questions/11686007/font-awesome-input-type-submit
+
+https://www.w3schools.com/howto/howto_css_loading_buttons.asp
+
+
+Opacity and rgba
+Background Props
+Margin: auto
+Border props
+Unit available 
+Difference between em and rem
+Overflow
+
+https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Aligning_Items_in_a_Flex_Container
+
+https://webpixels.io/components
+
+https://codepen.io/chriscoyier/pen/xLYjKx
+https://codepen.io/ozzie/pen/YPOBEJ
+https://stackoverflow.com/questions/31106189/create-a-simple-10-second-countdown
+
+https://bootstraptaste.com/
+
+https://www.frontendpractice.com/
+
+
+https://codepen.io/umeshlewa/pen/JjWMaqL
+https://stackoverflow.com/questions/41625910/offset-columns-in-bootstrap
+
+https://stackoverflow.com/questions/28284105/font-awesome-icon-and-text-in-input-submit-button
+
+https://codepen.io/dk11/pen/qBBxmgO
+https://blog.briebug.com/blog/managing-local-storage-in-angular
+https://stackoverflow.com/questions/3357553/how-do-i-store-an-array-in-localstorage
+https://reactgo.com/angular-submit-form-enter/
+https://stackoverflow.com/questions/46213989/iterate-over-array-of-objects-in-typescript
+
+https://www.geeksforgeeks.org/establish-communication-between-sibling-components-in-angular-11/
+https://angular.io/guide/component-interaction
