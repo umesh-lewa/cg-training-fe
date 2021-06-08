@@ -1,0 +1,49 @@
+
+
+https://flukeout.github.io/
+
+first-child
+last-child
+nth-type
+odd even
+.child.child2
+!important
+
+https://cubic-bezier.com/#.71,.11,0,1.12
+
+Opacity and rgba
+Background Props
+Margin: auto
+Border props
+Unit available 
+Difference between em and rem
+Overflow
+
+https://flexboxfroggy.com/
+
+https://cssgridgarden.com/
+
+http://www.flexboxdefense.com/
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide
+
+Meta programming Js
+1) Reflection
+2) Proxy
+ECMAScript standards and differences
+Javascript modules
+Javascript bundlers
+Closure & Hoisting
+Web components and Shadow DOM
+
+Input
+Output
+Interpolation
+Property Binding
+Event Binding
+Two Way Binding
+Dependency injection
+Need of services in angular
+Basic services demo
+Why do we need modularization
+modules
