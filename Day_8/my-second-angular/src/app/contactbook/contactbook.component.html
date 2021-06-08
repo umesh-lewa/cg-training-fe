@@ -1,0 +1,110 @@
+<div class="row">
+    <div class="row">
+        <div class="col-md-3">
+        </div>
+        <div class="col-md-6">
+            <h3 class="display-3 text-center">My Contacts</h3>
+        </div>
+        <div class="col-md-3">
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-3">
+        </div>
+        <div class="col-md-6 text-center">
+            <br>
+            <br>
+            <button (click)="addNewFormToFormArray()" class="btn btn-default"><i
+                    class="fas fa-plus-circle big-button-blue"></i></button>
+
+        </div>
+        <div class="col-md-3">
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-3">
+        </div>
+        <div class="col-md-6">
+
+            <br>
+
+            <div class="">
+                <div *ngFor="let group of contactFormArray.controls;">
+                    <form [formGroup]="group">
+                        <input type="text" formControlName="firstName" placeholder="" class="circular-input">
+                        <input type="text" formControlName="lastName" class="circular-input">
+                        <input type="text" formControlName="email" class="circular-input">
+                    </form>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="col-md-3">
+        </div>
+    </div>
+</div>
+
+<br>
+
+<div class="row">
+    <div class="col-md-3">
+    </div>
+    <div class="col-md-6 text-center">
+        <button (click)="saveContact()" class="btn bt-default"><i class="far fa-save big-button-green"></i></button>
+    </div>
+    <div class="col-md-3">
+    </div>
+</div>
+
+<br>
+
+<div class="row">
+    <div class="col-md-3">
+    </div>
+    <div class="col-md-6 text-center">
+
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th scope="col">First Name</th>
+                    <th scope="col">Last Name</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!--
+              <tr>
+                <th scope="row">1</th>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+              </tr>
+              -->
+                <tr *ngFor="let eachContact of listOfContacts;">
+                    <th scope="row">{{eachContact.firstName}}</th>
+                    <td>{{eachContact.lastName}}</td>
+                    <td>{{eachContact.email}}</td>
+                    <td><button (click)="removeContact(eachContact)" class="btn btn-default"><i
+                                class="fas fa-user-times big-button-red"></i></button></td>
+                </tr>
+
+            </tbody>
+        </table>
+        <!--
+        <div *ngFor="let eachContact of contacts;">
+            <p>{{eachContact.firstName}}</p>
+            <p>{{eachContact.lastName}}</p>
+            <p>{{eachContact.email}}</p>
+            <button class="btn btn-default"><i class="fas fa-user-times"></i></button>
+        </div>
+        -->
+    </div>
+    <div class="col-md-3">
+    </div>
+</div>
+
+<router-outlet></router-outlet>
