@@ -97,6 +97,7 @@ export class BasketComponent implements OnInit {
       console.log("items length 0 so removing key from local storage");
       localStorage.removeItem("myTodoListData");
     }
+    this.emitItemCount();
   }
 
 }

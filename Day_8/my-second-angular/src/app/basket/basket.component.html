@@ -1,14 +1,19 @@
-<h1 class="display-4">My Todo</h1>
-<br>
-<p>{{errorMessage}}</p>
-<input type="text" [(ngModel)]="itemName" class="rounded-input" (keyup)="addItemByEnter($event)"> <button
-    (click)="addItem()" class="btn btn-default green-icon"> Add <i class="fas fa-plus-circle"></i></button>
 
-<br>
 
-<ul>
-    <li *ngFor="let eachItem of items; let itemIndex = index;"
-        [ngClass]="eachItem[1]=='vegetable' ? 'vegetable-class' : 'fruit-class' ">{{eachItem[0]}} <button
-            (click)="removeItem(itemIndex)" class="btn btn-default"> <i
-                class="far fa-times-circle red-icon"></i></button> - Type : {{eachItem[1] | uppercase}}</li>
-</ul>
+    <h1 class="display-4">My Todo</h1>
+    <br>
+    <p>{{errorMessage}}</p>
+    <input type="text" [(ngModel)]="itemName" class="rounded-input" (keyup)="addItemByEnter($event)"> <button
+        (click)="addItem()" class="btn btn-default green-icon"> Add <i class="fas fa-plus-circle"></i></button>
+
+    <br>
+
+    <ul>
+        <li *ngFor="let eachItem of items; let itemIndex = index;"
+            [ngClass]="eachItem[1]=='vegetable' ? 'vegetable-class' : 'fruit-class' ">{{eachItem[0]}} <button
+                (click)="removeItem(itemIndex)" class="btn btn-default"> <i
+                    class="far fa-times-circle red-icon"></i></button> - Type : {{eachItem[1] | uppercase}}</li>
+    </ul>
+
+
+   

@@ -5,21 +5,26 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TestComponentComponent } from './test-component/test-component.component';
 
-import { FormsModule } from '@angular/forms';
+import { FormsModule , ReactiveFormsModule } from '@angular/forms';
 import { SummaryComponent } from './summary/summary.component';
 import { BasketComponent } from './basket/basket.component';
+import { ContactbookComponent } from './contactbook/contactbook.component';
+import { TodoAppComponent } from './todo-app/todo-app.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TestComponentComponent,
     SummaryComponent,
-    BasketComponent
+    BasketComponent,
+    ContactbookComponent,
+    TodoAppComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
