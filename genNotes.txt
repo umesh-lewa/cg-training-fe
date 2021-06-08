@@ -47,3 +47,6 @@ https://stackoverflow.com/questions/46213989/iterate-over-array-of-objects-in-ty
 
 https://www.geeksforgeeks.org/establish-communication-between-sibling-components-in-angular-11/
 https://angular.io/guide/component-interaction
+
+https://www.codingame.com/playgrounds/8104/angular-router-tutorial
+https://stackoverflow.com/questions/35163164/how-to-center-content-in-a-bootstrap-column#:~:text=Use%20d%2Dflex%20justify%2Dcontent,center%20everything%20inside%20that%20column.&text=If%20you%20have%20text%20and,%2Dcenter%20and%20text%2Dcenter%20.
