@@ -1,5 +1,6 @@
 import { Component, Input, OnInit, Output } from '@angular/core';
 import { EventEmitter } from '@angular/core';
+import { ItemcountServiceService } from '../itemcount-service.service';
 
 @Component({
   selector: 'app-basket',
@@ -8,7 +9,9 @@ import { EventEmitter } from '@angular/core';
 })
 export class BasketComponent implements OnInit {
 
-  constructor() { }
+  constructor(private itemCountService:ItemcountServiceService) {
+
+   }
 
   items: any = [];
   itemName = "";
@@ -20,7 +23,9 @@ export class BasketComponent implements OnInit {
   @Output() emitter:EventEmitter<Number> = new EventEmitter<Number>();
 
   emitItemCount(){
-    this.emitter.emit(this.items.length);
+    //this.emitter.emit(this.items.length);
+    console.log("Sending data to service....!!!");
+    this.itemCountService.data.next(this.items.length);
   }
 
   ngOnInit() {
@@ -31,7 +36,7 @@ export class BasketComponent implements OnInit {
     } else {
       console.log("no items found in localstorage");
     }
-    this.emitItemCount();
+    this.emitItemCount();   
   }
 
   addItem() {
@@ -97,7 +102,7 @@ export class BasketComponent implements OnInit {
       console.log("items length 0 so removing key from local storage");
       localStorage.removeItem("myTodoListData");
     }
-    this.emitItemCount();
+    this.emitItemCount(); 
   }
 
 }

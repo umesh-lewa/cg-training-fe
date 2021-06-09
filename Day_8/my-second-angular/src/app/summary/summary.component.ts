@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { ItemcountServiceService } from '../itemcount-service.service';
 
 @Component({
   selector: 'app-summary',
@@ -9,10 +10,14 @@ export class SummaryComponent implements OnInit {
 
   @Input() itemCount:Number;
   
-  constructor() { }
+  constructor(private itemService: ItemcountServiceService) { 
+
+  }
 
   ngOnInit(): void {
-    
+    this.itemService.data.subscribe(data=>{
+      this.itemCount = data;
+    });
   }
 
 }

@@ -8,5 +8,5 @@ export class ItemcountServiceService {
 
   constructor() { }
 
-  data: Subject<String>  = new Subject();
+  data: Subject<Number>  = new Subject();
 }
