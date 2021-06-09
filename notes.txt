@@ -47,3 +47,33 @@ Need of services in angular
 Basic services demo
 Why do we need modularization
 modules
+
+Task for tommorow:
+magic Basket
+Add items in your basket. make use of the directives provided by angular
+if my item is a fruit show it up in italics and feel free to add colors
+if my item is vegetable show it up on normal test and feel free to add colors
+you can also do styling for your input box and contents you gonna show
+additional points for people who are completing a remove items from basket feature
+
+Subjects and BehaviourSubjects
+RxJS operators
+Pipes - pure, impure, custom pipes
+
+Move all logic out of app component to basket-component.
+When displaying Items in the list also show their type next to it in Uppercase
+Create a new summary-component which is a sibling component to basket-component.
+Show live count of items added in the basket in the summary component.
+
+Reactive Forms
+Validation -  Build in, Custom, Async
+Routing
+Lazy Loading
+Auth Guards
+
+Create a Contact Book
+Use form array concept to create a contact book.
+Have a button so that user can add contacts into the book
+have a delete button if the user wants to delete a contact from a book
+show the results on a book in a form of a table
+By default there should be one available space to add contact at first
