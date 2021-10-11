@@ -52,3 +52,10 @@ https://www.codingame.com/playgrounds/8104/angular-router-tutorial
 https://stackoverflow.com/questions/35163164/how-to-center-content-in-a-bootstrap-column#:~:text=Use%20d%2Dflex%20justify%2Dcontent,center%20everything%20inside%20that%20column.&text=If%20you%20have%20text%20and,%2Dcenter%20and%20text%2Dcenter%20.
 
 https://dev.to/nik0w/communicate-between-angular-components-4l3d
+
+https://bluepaper.dev/
+
+
+https://www.cssportal.com/css-flexbox-generator/
+
+https://neumorphism.io/
