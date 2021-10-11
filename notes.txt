@@ -47,7 +47,6 @@ Need of services in angular
 Basic services demo
 Why do we need modularization
 modules
-
 Task for tommorow:
 magic Basket
 Add items in your basket. make use of the directives provided by angular
@@ -59,6 +58,8 @@ additional points for people who are completing a remove items from basket featu
 Subjects and BehaviourSubjects
 RxJS operators
 Pipes - pure, impure, custom pipes
+
+
 
 Move all logic out of app component to basket-component.
 When displaying Items in the list also show their type next to it in Uppercase
@@ -77,3 +78,14 @@ Have a button so that user can add contacts into the book
 have a delete button if the user wants to delete a contact from a book
 show the results on a book in a form of a table
 By default there should be one available space to add contact at first
+
+
+
+
+
+
+
+
+
+
+
